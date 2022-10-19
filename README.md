@@ -38,3 +38,29 @@ As regras que testaremos são as seguintes:
   mais os "relatórios mecenas" lançados durante a validade de sua assinatura (12
   meses)
 
+## Execução deste projeto
+Este projeto foi desenvolvido para ser executado na IDE, para isso será necessário executar
+via REPL, para isso é necessário ter instalado a JVM.
+
+<ol>
+  <li>Instale o java</li>
+  <li>Crie uma configuração de debug na IDE</li>
+  <li>Clique no botão de play para iniciar a execução</li>
+</ol>
+
+## Info
+
+O programa é executado pelo arquivo `core.clj` do projeto
+
+- A função `(access-control)` deve ser chamada passando uma keyword como parâmetro para validar o 
+acesso das mídias para este tipo de usuário.
+
+`(services.accesscontrol/access-control :mecenas)`
+
+- No arquivo `services.media` estão definidos os multi métodos para acessar as mídias, para usar 
+estas funções, é necessário passar uma keyword referenciando o tipo de mídia desejado.
+
+`(services.media/select-media {:media-type :series})`
+
+- A função `get-content-database`do namespace `utils.content`deve ser utilizada quando necessário 
+ler o arquivo `content-database.edn`.
