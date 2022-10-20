@@ -64,3 +64,28 @@ estas funções, é necessário passar uma keyword referenciando o tipo de mídi
 
 - A função `get-content-database`do namespace `utils.content`deve ser utilizada quando necessário 
 ler o arquivo `content-database.edn`.
+
+## Funcionamento da aplicação
+
+Para executar a aplicação você precisa chamar a função `(can-access?)` no arquivo `takehomebp.core` 
+passando por parâmetro o nome do usuário e o tipo do usuário. 
+
+#### Retorno de Sucesso
+
+Um mapa com as keyword de cada conteúdo e dentro os títulos.
+`{:media-podcast ({:type :podcast, :name CORINGA - Podcast Cultura Paralela #1, :released-at 2020-03-29T20:02:34.337} {:type :podcast, :name Democracia em Debate, :released-at 2020-03-29T20:02:34.340}), :media-debate ({:type :debate, :name Qual o limite do Respeito?, :released-at 2020-03-29T20:02:34.351} {:type :debate, :name O que realmente é a felicidade?, :released-at 2020-03-29T20:02:34.353}), :media-series ({:type :series, :name Congresso Brasil Paralelo, :released-at 2019-04-02T02:10:38.606} {:type :series, :name Brasil - A Última Cruzada, :released-at 2019-07-08T16:37:11.184}), :media-interview ({:type :interview, :name Congresso Brasil Paralelo - Rafael Nogueira, :released-at 2019-11-16T21:40:51.579} {:type :interview, :name Congresso Brasil Paralelo - Adriano Gianturco, :released-at 2019-11-16T21:40:51.581})}`
+
+#### Retorno de Falha
+
+Um mapa com um campo msg informando *Tipo de acesso não identificado* seguido do nome do usuário
+`{:msg Tipo de acesso não identificado - user: Higor}`
+
+#### Exemplo
+
+`(println (can-access? "Higor" :patriota))`
+
+#### Tipos dos usuários
+- :patriota
+- :premium
+- :mecenas
+- :all

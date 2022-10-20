@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## 0.1.4 - 2022-10-20
+### Added
+- Incluindo função para chamar a funcionalidade e removendo comentários desnecessários.
+
 ## 0.1.3 - 2022-10-20
 ### Added
 - Criação dos testes de media e content
