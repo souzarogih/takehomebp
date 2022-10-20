@@ -67,12 +67,3 @@
     (do
       false
       (log/error (format "Erro ao localizar a midia do usuário %s" user-type)))))
-
-
-
-
-
-;Todos os usuários terão acesso a nossas séries
-;Usuários de tipo patriota terão acesso a todos os podcasts, todos os debates, e também a todas as entrevistas lançadas durante a validade de sua assinatura (12 meses)
-;Usuários de tipo premium terão acesso a tudo que os patriotas têm, mais acesso a todos os cursos
-;Usuários de tipo mecenas terão acesso a tudo que os usuários premium têm, mais os "relatórios mecenas" lançados durante a validade de sua assinatura (12 meses)

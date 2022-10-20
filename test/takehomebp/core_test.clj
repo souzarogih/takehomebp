@@ -15,7 +15,3 @@
                          false {:type               :patriota
                                 :subscription-start (time/local-date-time "2017-01-24T11:46:22.811")
                                 :subscription-end   (time/local-date-time "2019-01-24T11:46:22.811") }))
-
-(deftest testando
-  (testing "teste"
-    (is (= 1 1 ))))

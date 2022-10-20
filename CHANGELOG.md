@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## 0.1.3 - 2022-10-20
+### Added
+- Criação dos testes de media e content
+
 ## 0.1.2 - 2022-10-19
 ### Added
 - Criando funcionalidade para controle de acesso do usuário

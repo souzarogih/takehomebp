@@ -24,6 +24,8 @@
 ;(clojure.pprint/pprint (ac/access-control :all))
 ;(clojure.pprint/pprint (ac/access-control :higuinhoass))
 
+(println "teste")
+
 
 (defn can-access? [object purchase]
   (if (= (:type object) :movie)
